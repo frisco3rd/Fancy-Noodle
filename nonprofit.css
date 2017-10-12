@@ -13,8 +13,7 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    font-family: "Arial Rounded MT Bold";
-	font-size: 15px;
+    font-family: 'Dekko';font-size: 22px;
 	font-style: normal;
 	font-variant: normal;
 	font-weight: bold;
@@ -52,9 +51,18 @@ a {
     border-color: rgba(255,255,255,1);
   }
 #topPart{
-    background-image: url("https://image.ibb.co/kfk3Qb/part1.png");
+    background-image: url("https://image.ibb.co/kCk3Qb/foodbg.png");
     background-position: center; 
     width:100%;
     height: 100%;
     
+}
+.menuText{
+    font-family: 'Pacifico', cursive;
+    font-size: 250px;
+    color: #FFE818;
+    position: fixed;
+    left: 250px;
+    transform: rotate(90deg);
+	transform-origin: left top 0;
 }
