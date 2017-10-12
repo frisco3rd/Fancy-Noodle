@@ -1,86 +1,52 @@
-/* The side navigation menu */
-.sidenav {
-    height: 100%; /* 100% Full-height */
-    width: 0; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
-    top: 0;
-    left: 0;
-    background-color:#254F68; /* Black*/
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
-}
-
-/* The navigation menu links */
-.sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s
-}
-
-/* When you mouse over the navigation links, change their color */
-.sidenav a:hover, .offcanvas a:focus{
-    color: #f1f1f1;
-}
-
-/* Position and style the close button (top right corner) */
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-}
-
-/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-#main {
-    transition: margin-left .5s;
-    padding: 20px;
-}
-
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-}
 
 .navlogo{
-    margin-top: 20px;
-    width: 170;
-    height: 100px;
-    float: right;
+    height: 200px;
+    width: 200px;
 }
-#box1{    
-    width: 300px;
-    height: 300px;
-    margin-left: 30px;
-    background-image: url("https://image.ibb.co/h08J5b/bowlicon.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
+
+body {
+  background-color:#070707;
+  font-size: 1.5em;
+  
 }
-#box2{
-    width: 300px;
-    height: 300px;
-    margin-left: 30px;
-    background-image: url("https://image.ibb.co/fmFy5b/sakeicon.png ");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-family: "Arial Rounded MT Bold";
+	font-size: 24px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: bold;
+	line-height: 26.4px;    
 }
-#box3{
-    width: 300px;
-    height: 300px;
-    margin-left: 30px;
-    background-image: url("https://image.ibb.co/gdgXWG/macicon.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;   
+li {
+    display: inline-block;
+    padding: 0 10px;
 }
-.row{
-    padding-left: 23%;
+header{
+text-align: center;
 }
+a {
+    text-decoration: none;
+    color: rgba(255,255,255,1);
+    position: relative;
+    padding: 16px 7px;
+    border-top: 2px solid rgba(255,255,255,0);
+    border-bottom: 2px solid rgba(255,255,255,0);
+    transition:  .3s,border-color .3s;
+  }
+  
+  a:focus, a:hover {
+    padding: 10px 10px;
+    border-color: rgba(255,255,255,1);
+    outline: none;
+    color: rgb(201, 49, 49);
+  }
+  
+  
+  a:focus::before, a:hover::before, a:focus::after, a:hover::after {
+    max-height: 90%;
+    transition-delay: .28s;
+    border-color: rgba(255,255,255,1);
+  }
