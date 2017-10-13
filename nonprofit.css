@@ -66,3 +66,11 @@ a {
     transform: rotate(90deg);
 	transform-origin: left top 0;
 }
+#fullText{
+    color: #FFE818;
+    font-family: 'Dekko';font-size: 22px;
+    position: relative;
+    left: 900px;
+    padding: 16px 7px;
+    
+}
